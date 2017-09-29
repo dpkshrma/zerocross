@@ -2,17 +2,22 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    display: 'flex',
+    // flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  cell: {
+  board: {
+    height: '80%',
+    width: '80%',
+    transform:[{rotate: '-10 deg'}],
+  },
+  row: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ccc',
-    width: '100%',
   },
   rtBorderCell: {
     borderRightWidth: 4,
@@ -21,6 +26,16 @@ const styles = StyleSheet.create({
   btBorderCell: {
     borderBottomWidth: 4,
     borderBottomColor: 'black',
+  },
+  cell: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
+  },
+  cellText: {
+    fontSize: 40,
   },
 });
 
